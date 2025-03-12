@@ -1,22 +1,21 @@
-import Nabar from "./componenet/Nabar";
-import Hero from "./componenet/Hero";
-import Section from "./componenet/Section";
-import Services from "./componenet/services";
-
-import Setionk from "./componenet/Setionk";
-import Footerx from "./componenet/Footerx";
+import React from "react";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Services from "./components/Service";
+import Tours from "./components/Tours";
 
 function App() {
   return (
-    <>
-      <Nabar />
+    <React.Fragment>
+      <Navbar />
       <Hero />
-      <Section />
+      <About />
       <Services />
-
-      <Setionk />
-      <Footerx />
-    </>
+      <Tours />
+      <Footer />
+    </React.Fragment>
   );
 }
 
